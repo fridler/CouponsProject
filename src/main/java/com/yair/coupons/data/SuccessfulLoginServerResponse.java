@@ -1,0 +1,36 @@
+package com.yair.coupons.data;
+
+import com.yair.coupons.enums.UserType;
+
+public class SuccessfulLoginServerResponse {
+
+	private UserType userType;
+	private int token;
+	
+	public SuccessfulLoginServerResponse(UserType userType, int token) {
+		this.userType = userType;
+		this.token = token;
+	}
+
+	public SuccessfulLoginServerResponse() {
+		super();
+	}
+
+	public UserType getUserType() {
+		return userType;
+	}
+
+	public void setUserType(UserType userType) {
+		this.userType = userType;
+	}
+
+	public int getToken() {
+		return token;
+	}
+
+	public void setToken(int token) {
+		this.token = token;
+	}
+	
+	
+}
